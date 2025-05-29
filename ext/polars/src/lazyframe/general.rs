@@ -167,6 +167,7 @@ impl RbLazyFrame {
         let glob = bool::try_convert(arguments[16])?;
         let include_file_paths = Option::<String>::try_convert(arguments[17])?;
         let allow_missing_columns = bool::try_convert(arguments[18])?;
+        let skip_rows = usize::try_convert(arguments[19])?;
 
         let parallel = parallel.0;
         let hive_schema = hive_schema.map(|s| Arc::new(s.0));
@@ -185,6 +186,7 @@ impl RbLazyFrame {
 
         let mut args = ScanArgsParquet {
             n_rows,
+            skip_rows,
             cache,
             parallel,
             rechunk,

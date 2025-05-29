@@ -1711,7 +1711,7 @@ dependencies = [
  "magnus",
  "mimalloc",
  "num-traits",
- "polars 0.48.0",
+ "polars 0.48.1",
  "polars-arrow",
  "polars-core",
  "polars-parquet",
@@ -1724,9 +1724,8 @@ dependencies = [
 
 [[package]]
 name = "polars"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f8e55331501d603dacb8ddbdc0f53306166fd34e05f59b77585cabf5049a405"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "getrandom 0.2.16",
  "polars-arrow",
@@ -1745,9 +1744,8 @@ dependencies = [
 
 [[package]]
 name = "polars-arrow"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "80bbff45c3c087bb96667768b0c5e1a29f599ca23c906a5cf44cd5719c2d19f2"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "atoi_simd",
  "avro-schema",
@@ -1787,9 +1785,8 @@ dependencies = [
 
 [[package]]
 name = "polars-compute"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f5d89a05c1ef9263ba2085a32b71520695b91c0363eef9782aa6b450edb6ba39"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "atoi_simd",
  "bytemuck",
@@ -1813,9 +1810,8 @@ dependencies = [
 
 [[package]]
 name = "polars-core"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "98cbc2f5626c36b435a7d9f7c412ebc84e5c5e7f16ed6f51fc1bca947db2ffe1"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "bitflags",
  "bytemuck",
@@ -1847,9 +1843,8 @@ dependencies = [
 
 [[package]]
 name = "polars-error"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fd9c6c914e573adcee31c92e43085a1fdcc0c200435c6742587278f4782f42a1"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "avro-schema",
  "object_store",
@@ -1862,9 +1857,8 @@ dependencies = [
 
 [[package]]
 name = "polars-expr"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a8ee1b10e599fb6b6820ea9027195e4b9d549861cc7f6cc36a9d4139830ef945"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "bitflags",
  "hashbrown 0.15.3",
@@ -1885,9 +1879,8 @@ dependencies = [
 
 [[package]]
 name = "polars-io"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7e7b1bb4d8686f370cf0405dc760eead4f1a56b07b15ce6fe10f076d791f2d98"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "async-trait",
  "atoi_simd",
@@ -1930,9 +1923,8 @@ dependencies = [
 
 [[package]]
 name = "polars-json"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ca5dab789dd604fe5cc0a6798147a4bb1e2085fd027ba65dc48380813c796945"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "chrono",
  "chrono-tz",
@@ -1952,9 +1944,8 @@ dependencies = [
 
 [[package]]
 name = "polars-lazy"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9e658df3117e5f382eff1c97a7df76b04eaeb231d63139b8e6fee7de32ee06e2"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "bitflags",
  "chrono",
@@ -1981,9 +1972,8 @@ dependencies = [
 
 [[package]]
 name = "polars-mem-engine"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "95c7a92f7231cab82294c4f4c41104431417141ce91bf9fd4611e477fde719b2"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "futures",
  "memmap2",
@@ -2004,9 +1994,8 @@ dependencies = [
 
 [[package]]
 name = "polars-ops"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "665d4c023850ffdb506833aa3277666e51febb2f94aa18303ca7938cb4f7f111"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "aho-corasick",
  "argminmax",
@@ -2044,9 +2033,8 @@ dependencies = [
 
 [[package]]
 name = "polars-parquet"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dd2184473f4876e485fa890e62b14499f7ac70508ee43d6d10d90afde3b7a7b3"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "async-stream",
  "base64",
@@ -2082,9 +2070,8 @@ dependencies = [
 
 [[package]]
 name = "polars-pipe"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7c6f2cf43fc3ad2eba7e49864a6e3fbe5d221ed9f5de216164124c974804518c"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "crossbeam-channel",
  "crossbeam-queue",
@@ -2109,9 +2096,8 @@ dependencies = [
 
 [[package]]
 name = "polars-plan"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4d9795038f5d3a83ea273407715e92054bd355e3e251a5d729ba397f66e80282"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "bitflags",
  "bytemuck",
@@ -2143,9 +2129,8 @@ dependencies = [
 
 [[package]]
 name = "polars-row"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7510a28ef2a835bb88aceb83f41dd84b65182b9943b760e8919ae4882bfe27d1"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "bitflags",
  "bytemuck",
@@ -2157,9 +2142,8 @@ dependencies = [
 
 [[package]]
 name = "polars-schema"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d94e88bc9dda80ced9a9222de5178f5a5990a50e8e9a0d7e6ddfb65ee27eeb3d"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "indexmap",
  "polars-error",
@@ -2170,9 +2154,8 @@ dependencies = [
 
 [[package]]
 name = "polars-sql"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "75e79a010b3b792b5de78807547ead5d63b3c52d7e369a8afe1cf8e014bfc99e"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "bitflags",
  "hex",
@@ -2191,9 +2174,8 @@ dependencies = [
 
 [[package]]
 name = "polars-stream"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0a141963c30085a32dc8b6d3b302b6c7dfb1b180667a067f1170b73bd96e040f"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "async-channel",
  "async-trait",
@@ -2228,9 +2210,8 @@ dependencies = [
 
 [[package]]
 name = "polars-time"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "75f865898802fadffe0af007963175b2a708f9048851a000737ad0b51309a988"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "atoi_simd",
  "bytemuck",
@@ -2252,9 +2233,8 @@ dependencies = [
 
 [[package]]
 name = "polars-utils"
-version = "0.48.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "25f245314e05f1d1a96162bca2ffd3378835269be7c9de14f082c5cdad5705fc"
+version = "0.48.1"
+source = "git+https://github.com/pbrumm/polars.git?branch=fix%2Fexpose_skip_rows_for_paging#fcec88ce1e6b77ff6aac1b24eccfe25eeca76bdd"
 dependencies = [
  "bincode",
  "bytemuck",

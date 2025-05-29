@@ -55,6 +55,7 @@ module Polars
       source,
       columns: nil,
       n_rows: nil,
+      skip_rows: 0,
       row_count_name: nil,
       row_count_offset: 0,
       parallel: "auto",
@@ -76,6 +77,7 @@ module Polars
         scan_parquet(
           source,
           n_rows: n_rows,
+          skip_rows: skip_rows,
           row_count_name: row_count_name,
           row_count_offset: row_count_offset,
           parallel: parallel,
@@ -129,6 +131,8 @@ module Polars
     #   Path to a file or a file-like object.
     # @param n_rows [Integer]
     #   Stop reading from parquet file after reading `n_rows`.
+    # @param skip_rows [Integer]
+    #   Skip the first rows for paging `skip_rows`.
     # @param row_count_name [String]
     #   If not nil, this will insert a row count column with give name into the
     #   DataFrame.
@@ -176,6 +180,7 @@ module Polars
     def scan_parquet(
       source,
       n_rows: nil,
+      skip_rows: 0,
       row_count_name: nil,
       row_count_offset: 0,
       parallel: "auto",
@@ -207,6 +212,7 @@ module Polars
       _scan_parquet_impl(
         source,
         n_rows: n_rows,
+        skip_rows: skip_rows,
         cache: cache,
         parallel: parallel,
         rechunk: rechunk,
@@ -231,6 +237,7 @@ module Polars
     def _scan_parquet_impl(
       source,
       n_rows: nil,
+      skip_rows: 0,
       cache: true,
       parallel: "auto",
       rechunk: true,
@@ -282,7 +289,8 @@ module Polars
           retries,
           glob,
           include_file_paths,
-          allow_missing_columns
+          allow_missing_columns,
+          skip_rows
         )
       Utils.wrap_ldf(rblf)
     end
