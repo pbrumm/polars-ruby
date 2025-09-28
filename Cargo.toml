@@ -9,7 +9,7 @@ strip = true
 
 [patch.crates-io]
 polars = { package = "polars", git = "https://github.com/pbrumm/polars.git", branch = "fix/expose_skip_rows_for_paging"}
-arrow = { package = "polars-arrow", git = "https://github.com/pbrumm/polars.git", branch = "fix/expose_skip_rows_for_paging"}
+#arrow = { package = "polars-arrow", git = "https://github.com/pbrumm/polars.git", branch = "fix/expose_skip_rows_for_paging"}
 polars-arrow = { package = "polars-arrow", git = "https://github.com/pbrumm/polars.git", branch = "fix/expose_skip_rows_for_paging"}
 polars-core = { package = "polars-core", git = "https://github.com/pbrumm/polars.git", branch = "fix/expose_skip_rows_for_paging"}
 polars-plan = { package = "polars-plan", git = "https://github.com/pbrumm/polars.git", branch = "fix/expose_skip_rows_for_paging"}
