@@ -5,9 +5,6 @@ resolver = "2"
 [profile.release]
 strip = true
 
-[package]
-rust = "1.91.0"
-
 
 [patch.crates-io]
 polars = { package = "polars", git = "https://github.com/pbrumm/polars.git", branch = "fix/expose_skip_rows_for_paging"}
