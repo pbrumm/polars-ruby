@@ -5,6 +5,8 @@ resolver = "2"
 [profile.release]
 strip = true
 
+[package]
+rust = "1.91.0"
 
 
 [patch.crates-io]
